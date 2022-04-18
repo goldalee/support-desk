@@ -14,8 +14,8 @@ function NewTicket() {
       )
     const [name] = useState(user.name)
     const [email] = useState(user.email)
-    const [product, setProduct] = useState('')
-    const [description, setDescription] =useState(user.description)
+    const [product, setProduct] = useState('iPhone')
+    const [description, setDescription] =useState('')
     const dispatch =useDispatch()
     const navigate =useNavigate()
 

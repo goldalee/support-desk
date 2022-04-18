@@ -60,6 +60,7 @@ const getTicket = asyncHandler(async (req, res)=>{
 //@access Private
 const createTicket = asyncHandler(async (req, res)=>{
     const {product, description} = req.body
+
     if(!product || !description){
         res.status(400)
         throw new Error('Please add a product and description')
@@ -136,21 +137,12 @@ const updateTicket = asyncHandler(async (req, res)=>{
     res.status(200).json(updatedTicket)
 })
 
-
-
-
-
-
-
-
-
-
 module.exports={
     getTickets,
     createTicket,
     getTicket,
     deleteTicket,
-    updateTicket
+    updateTicket,
 }
 
 
